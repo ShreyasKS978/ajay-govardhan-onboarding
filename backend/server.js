@@ -8,17 +8,17 @@ const fs = require("fs");
 const mime = require('mime-types');
 
 const app = express();
-const PORT = process.env.PORT || 3033;
+const PORT = process.env.PORT || 3420;
 
 // CORS Setup
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL,
-    "http://13.232.23.97:8117",
-    "http://13.232.23.97:3033",
+    "http://44.223.23.145:8039",
+    "http://44.223.23.145:3420",
     "http://127.0.0.1:5500",
     "http://localhost:5500",
-    "http://13.232.23.97:8118"
+    "http://44.223.23.145:8040"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
