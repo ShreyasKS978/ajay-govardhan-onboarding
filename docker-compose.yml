@@ -5,7 +5,7 @@ services:
     build: ./backend
     container_name: backend-service
     ports:
-      - "3056:3056"
+      - "3057:3057"
     env_file:
       - ./backend/server.env
     depends_on:
@@ -39,7 +39,7 @@ services:
       POSTGRES_PASSWORD: admin123
       POSTGRES_DB: onboarding
     ports:
-      - "6613:5432"
+      - "6614:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
